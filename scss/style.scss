@@ -155,6 +155,7 @@ body {
     min-height: 100vh;
     height: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -733,7 +734,9 @@ body {
         //padding: 109px 190px;
         max-width: 1200px;
 
-        //padding-top: 118px;
+        @media screen and (max-width: 511px) {
+            padding: 5px;
+        }
     }
 
     // .footer__headline
@@ -754,6 +757,10 @@ body {
         min-width: 320px;
         margin: 20px;
         //height: 201px;
+
+        @media screen and (max-width: 511px) {
+            align-items: center;
+        }
     }
 
     // .footer__logotype
@@ -787,6 +794,10 @@ body {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
+
+        @media screen and (max-width: 511px) {
+            text-align: center;
+        }
     }
 
     // .footer__reserve
@@ -810,6 +821,10 @@ body {
         //margin: 50px;
         //padding: 109px 190px;
         max-width: 810px;
+
+        @media screen and (max-width: 511px) {
+
+        }
     }
 
     // .footer__company
@@ -824,6 +839,10 @@ body {
         //height: 201px;
         line-height: 38px;
         margin: 20px;
+
+        @media screen and (max-width: 511px) {
+            margin: 2px;
+        }
     }
 
     // .footer__region
@@ -838,6 +857,10 @@ body {
         //height: 201px;
         line-height: 38px;
         margin: 20px;
+
+        @media screen and (max-width: 511px) {
+            margin: 2px;
+        }
     }
 
     // .footer__help
@@ -852,6 +875,10 @@ body {
         //height: 201px;
         line-height: 38px;
         margin: 20px;
+
+        @media screen and (max-width: 511px) {
+            margin: 2px;
+        }
     }
 }
 
