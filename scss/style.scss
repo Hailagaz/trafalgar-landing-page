@@ -122,7 +122,7 @@ p {
 
 .circle-repeat {
     background-image: url(../images/Vector3.png);
-    //position: absolute;
+    position: absolute;
     height: 114.99999237060547px;
     width: 131.58103942871094px;
     z-index: -1000;
@@ -624,7 +624,7 @@ body {
     &__bg-vector {
         transform: rotate(-180deg);
         right: 0px;
-        top: 4600px;
+        top: 4300px;
     }
 
     // .last-article__header-main
