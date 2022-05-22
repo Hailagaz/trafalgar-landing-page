@@ -226,7 +226,7 @@
   }
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -391,7 +391,6 @@ body {
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 .wrapper {
