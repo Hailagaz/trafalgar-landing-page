@@ -1323,10 +1323,8 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  justify-content: space-between;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -1356,6 +1354,7 @@ a:hover {
 .swiper-photo {
   border-radius: 50%;
   border: 3px #c4c4c4 solid;
+  max-width: 133px;
 }
 
 .swiper-person {
@@ -1377,12 +1376,12 @@ a:hover {
 }
 
 .swiper-testimonials {
-  margin-right: 50px;
+  margin: auto 50px auto 20px;
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.9);
-  height: 120px;
+  height: auto;
   max-width: 420px;
 }
 

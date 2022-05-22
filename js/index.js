@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     slides += `
                         <div class="swiper-slide">
                             <div class="swiper-info">
-                                <img class="swiper-photo" src="images/image_1.png" alt="Testimonials, person 1">
+                                <img class="swiper-photo" src="${testimonial.image}" alt="Testimonials photo">
                                 <div class="swiper-person">
                                     <div class="swiper-name">
                                         ${testimonial.name}
