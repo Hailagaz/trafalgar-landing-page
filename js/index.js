@@ -14,14 +14,13 @@ function hrefOnClick() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        fetch("../data/testimonials.json")
-            .then((response) => response.json())
-            .then((data) => {
-                let slides = '';
+    fetch("../data/testimonials.json")
+        .then((response) => response.json())
+        .then((data) => {
+            let slides = '';
 
-                for (let testimonial of data) {
-                    slides += `
+            for (let testimonial of data) {
+                slides += `
                         <div class="swiper-slide">
                             <div class="swiper-info">
                                 <img class="swiper-photo" src="${testimonial.image}" alt="Testimonials photo">
@@ -39,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             </p>
                         </div>
                     `;
-                }
-                document.querySelector('.swiper').innerHTML = `
+            }
+            document.querySelector('.swiper').innerHTML = `
                     <div class="swiper-wrapper">
                         ${slides}
                     </div>
@@ -48,28 +47,26 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 `;
-                
-                // SWIPER
-                const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    //direction: 'vertical',
-                    loop: true,
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            })
-            .catch((err) => {
-                document.querySelector('.swiper').innerHTML = '<p>Sorry, oops!</p>';
+            // SWIPER
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                //direction: 'vertical',
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
-    }, 2000);
+        })
+        .catch((err) => {
+            document.querySelector('.swiper').innerHTML = '<p>Sorry, oops!</p>';
+        });
 })
