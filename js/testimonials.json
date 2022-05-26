@@ -3,24 +3,24 @@
         "name": "Edward Newgate",
         "position": "Founder Circle",
         "testimonial": "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
-        "image": "/images/image_1_1.png"
+        "image": "images/image_1_1.png"
     },
     {
         "name": "John Ewerett",
         "position": "UX/UI designer",
         "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis modi eius aut assumenda ratione quidem eum enim delectus qui.",
-        "image": "/images/image_1_2.jpg"
+        "image": "images/image_1_2.jpg"
     },
     {
         "name": "Sam truman",
         "position": "Engineer",
         "testimonial": "Fuga nostrum at tenetur blanditiis in laudantium cumque aliquid nisi. Voluptates, laudantium suscipit.",
-        "image": "/images/image_1_3.jpg"
+        "image": "images/image_1_3.jpg"
     },
     {
         "name": "Unknown",
         "position": "Web developer",
         "testimonial": "Repellendus distinctio accusantium, excepturi perspiciatis mollitia hic vel quo iusto minima dolores.",
-        "image": "/images/image_1_4.jpg"
+        "image": "images/image_1_4.jpg"
     }
 ]
