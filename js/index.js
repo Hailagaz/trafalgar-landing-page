@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(window.location.hash).scrollIntoView();
     }
 
-    fetch("../data/testimonials.json")
+    fetch("https://hailagaz.github.io/trafalgar-landing-page/data/testimonials.json")
         .then((response) => response.json())
         .then((data) => {
             let slides = '';
