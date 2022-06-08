@@ -20,10 +20,9 @@
     #menu-bar {
         width: 45px;
         height: 40px;
-        //margin: 30px 0 20px 20px;
-        margin: 70px 20px 0px 0px;//
+        margin: 70px 20px 0px 0px;
         cursor: pointer;
-        left: 68%;//
+        left: 68%;
     }
 
     .bar {
@@ -73,7 +72,6 @@
         top: 0;
         right: 0;
         position: absolute;
-        //position: relative;
     }
 
     .menu-bg {
@@ -84,7 +82,7 @@
         background: radial-gradient(circle, #67C3F3, #5A98F2);
         border-radius: 50%;
         transition: 0.3s ease;
-        right: 0;//
+        right: 0;
     }
 
     .change {
@@ -111,9 +109,9 @@
     .change-bg {
         width: 520px;
         height: 460px;
-        left: 95%;//
+        left: 95%;
         top: 10%;
-        position: absolute;//
+        position: absolute;
         
         transform: translate(-60%, -30%);
     }

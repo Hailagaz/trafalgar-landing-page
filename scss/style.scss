@@ -2,14 +2,11 @@
 //@import "_list";
 @import "_menu";
 @import "_spinner";
+
 html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
-// img {
-//     object-fit: cover;
-// }
 
 h1,
 h2,
@@ -64,7 +61,6 @@ p {
     border-radius: 55px;
     background: #ffffff;
     border: 1.4px solid #458ff6;
-    //box-sizing: border-box;
     color: #458ff6;
 }
 
@@ -88,8 +84,6 @@ p {
 .general-logotype {
     display: flex;
     align-items: center;
-    //margin-left: 190px;
-
     font-style: normal;
     font-weight: 700;
 }
@@ -136,8 +130,6 @@ p {
     border-radius: 0px;
     opacity: 0.6;
     z-index: -1000;
-    //background: linear-gradient(175.68deg, #ffffff -10.48%, #DEEEFE 92.66%);
-    //transform: rotate(21.46deg);
 }
 
 .empty {
@@ -155,7 +147,6 @@ body {
     min-height: 100vh;
     height: 100%;
     margin: 0 auto;
-    //overflow-x: hidden;
 }
 
 .wrapper {
@@ -163,8 +154,6 @@ body {
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
-    //box-sizing: border-box;
-    //overflow: hidden;
 }
 
 .header {
@@ -172,7 +161,6 @@ body {
     flex: 1 1 auto;
     flex-flow: column;
     align-items: center;
-    //height: 719px;
     height: 100%;
     min-width: 300px;
     width: 100%;
@@ -203,18 +191,7 @@ body {
 
     // .header-raw1__menu
 
-    // &__menu {
-    //     display: flex;
-    //     align-items: center;
-    //     flex: 1 1 auto;
-    //     flex-flow: row wrap;
-    //     justify-content: flex-end;
-    //     //margin-right: 190px;
-    //     font-weight: 400;
-    //     font-size: 18px;
-    //     line-height: 23px;
-    //     opacity: 0.5;
-    // }
+    // &__menu {}
 
     // .header-raw1__link
 
@@ -258,7 +235,6 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 445px;
-        //margin-left: 190px;
     }
 
     // .header-raw2__header
@@ -296,13 +272,8 @@ body {
     &__illustration {
         width: 100%;
         height: auto;
-        //max-width: 693px;
         max-width: 500px;
-        //max-height: 598px;
         margin-top: 40px;
-        //width: 693px;
-        //height: 598px;
-        //margin-right: 163px;
     }
 
     @media screen and (max-width: 1099px) {
@@ -360,6 +331,7 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
     // .services-head__header
 
     &__header {
@@ -401,6 +373,7 @@ body {
     border-radius: 20px;
     padding: 47px 50px 47px 38px;
     background-color: #ffffff;
+
     // .services-block__image
 
     &__image {
@@ -429,6 +402,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+
     // .providers__image
 
     &__circle3 {
@@ -439,7 +413,6 @@ body {
     &__image {
         width: 100%;
         height: auto;
-        //max-width: 650px;
         max-width: 500px;
         margin-top: 40px;
     }
@@ -451,10 +424,10 @@ body {
 }
 
 .providers-body {
-    //margin-right: 192px;
     display: flex;
     flex-flow: column wrap;
     max-width: 445px;
+
     // .providers-body__header
 
     &__header {
@@ -498,12 +471,12 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+
     // .download__image
 
     &__image {
         width: 100%;
         height: auto;
-        //max-width: 665px;
         max-width: 500px;
         margin-top: 40px;
     }
@@ -518,8 +491,7 @@ body {
     max-width: 445px;
     display: flex;
     flex-flow: column wrap;
-    //height: 375px;
-    //margin-left: 280px;
+
     // .download-body__header
 
     &__header {
@@ -728,10 +700,8 @@ body {
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
-        //margin: 0px auto 0px auto;
         margin: auto;
         padding: 50px;
-        //padding: 109px 190px;
         max-width: 1200px;
 
         @media screen and (max-width: 511px) {
@@ -756,7 +726,6 @@ body {
         max-width: 390px;
         min-width: 320px;
         margin: 20px;
-        //height: 201px;
 
         @media screen and (max-width: 511px) {
             align-items: center;
@@ -768,7 +737,6 @@ body {
     &__logotype {
         margin-left: 0px;
         margin-bottom: 17px;
-        //align-self: flex-start;
     }
 
     // .footer__logo
@@ -789,7 +757,6 @@ body {
     &__description {
         margin-bottom: 31px;
         line-height: 28px;
-        //max-width: 390px;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 300;
@@ -817,9 +784,6 @@ body {
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
-        //margin: 0px auto 0px auto;
-        //margin: 50px;
-        //padding: 109px 190px;
         max-width: 810px;
 
         @media screen and (max-width: 511px) {
@@ -836,7 +800,6 @@ body {
         align-items: flex-start;
         justify-content: center;
         max-width: 100px;
-        //height: 201px;
         line-height: 38px;
         margin: 20px;
 
@@ -854,7 +817,6 @@ body {
         align-items: flex-start;
         justify-content: center;
         max-width: 100px;
-        //height: 201px;
         line-height: 38px;
         margin: 20px;
 
@@ -872,7 +834,6 @@ body {
         align-items: flex-start;
         justify-content: center;
         max-width: 125px;
-        //height: 201px;
         line-height: 38px;
         margin: 20px;
 
@@ -894,7 +855,6 @@ a:hover {
     margin-right: auto;
     margin-top: 66px;
     height: 274px;
-    //height: 100%;
     max-width: 984px;
 }
 
@@ -908,10 +868,8 @@ a:hover {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    //justify-content: space-between;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    //-webkit-justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -935,7 +893,6 @@ a:hover {
     border-radius: 50%;
     border: 3px #c4c4c4 solid;
     max-width: 133px;
-    //max-height: auto;
 }
 
 .swiper-person {
@@ -962,7 +919,6 @@ a:hover {
     font-size: 19px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.9);
-    //height: 120px;
     height: auto;
     max-width: 420px;
 }
@@ -970,14 +926,3 @@ a:hover {
 footer p {
     color: #ffffff;
 }
-
-// @media screen and (max-width: 1199px) {
-//     .header-raw2 {
-//         justify-content: center;
-
-//         &__helthcare {
-//             justify-content: center;
-//             max-width: 100%
-//         }
-//     }
-// }
