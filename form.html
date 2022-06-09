@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="images/molecule.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/molecule.ico" rel="icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    First name:<br>
+                    <input type="text" name="firstname" placeholder="Enter your first name"><br>
+                    Last name:<br>
+                    <input type="text" name="lastname" placeholder="Enter your last name"><br>
+                    Email:<br>
+                    <input type="email" name="email" placeholder="Enter your email"><br>
+                    Phone number:<br>
+                    <input type="tel" name="phone" placeholder="Enter your phone number"><br>
+                    Address:<br>
+                    <input type="text" name="address" placeholder="Enter your address"><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Gender</legend>
+                    Select your gender for the best solution:<br>
+                    <input type="radio" name="gender" value="male">Male<br>
+                    <input type="radio" name="gender" value="female">Female<br>
+                    <input type="radio" name="gender" value="other">Other<br>
+                    Age:<br>
+                    <input type="number" name="age" min="0" max="150" placeholder="Enter your age"><br>
+                    Birthday:<br>
+                    <input type="date" name="bday" placeholder="Enter fate of your birthday"><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Specialist</legend>
+                    Select type of specialist:<br>
+                    <select name="doctors" multiple><br>
+                        <option value="physician_family">Family practice physician</option>
+                        <option value="physician_internal">Internal medicine physician</option>
+                        <option value="pediatrician">Pediatrician</option>
+                        <option value="allergist">Allergist</option>
+                        <option value="dermatologist">Dermatologist</option>
+                        <option value="infectious">Infectious disease doctor</option>
+                        <option value="ophthalmologist">Ophthalmologist</option>
+                        <option value="gynecologist">Obstetrician/gynecologist</option>
+                        <option value="cardiologist">Cardiologist</option>
+                        <option value="endocrinologist">Endocrinologist</option>
+                        <option value="gastroenterologist">Gastroenterologist</option>
+                        <option value="nephrologist">Nephrologist</option>
+                        <option value="urologist">Urologist</option>
+                        <option value="pulmonologist">Pulmonologist</option>
+                        <option value="otolaryngologist">Otolaryngologist</option>
+                        <option value="neurologist">Neurologist</option>
+                        <option value="psychiatrist">Psychiatrist</option>
+                        <option value="oncologist">Oncologist</option>
+                        <option value="radiologist">Radiologist</option>
+                        <option value="rheumatologist">Rheumatologist</option>
+                        <option value="surgeon_general">General surgeon</option>
+                        <option value="surgeon_orthopedic">Orthopedic surgeon</option>
+                        <option value="surgeon_cardiac">Cardiac surgeon</option>
+                        <option value="anesthesiologist">Anesthesiologist</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Details</legend>
+                    <textarea name="complaints" id="complaints" cols="15" rows="5"
+                    placeholder="Enter your health complaints, symptoms and other details"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
