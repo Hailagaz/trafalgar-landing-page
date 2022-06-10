@@ -330,12 +330,28 @@
   }
 }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 textarea {
   min-width: 250px;
   max-width: 80%;
   min-height: 50px;
   height: 30%;
   width: 100%;
+}
+
+input[type="text"] {
+  font-family: inherit;
+  /* 1 */
+  font-size: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 html, body {
