@@ -26,27 +26,26 @@
                     <legend>Personal information</legend>
                     <div class="form__textfield">
                         <label for="text" class="form__textfield-label">First name:</label>
-                        <input type="text" name="firstname" placeholder="Enter your first name" 
+                        <input type="text" name="firstname" placeholder="Enter your first name"
                             class="form__textfield-input">
                     </div>
                     <div class="form__textfield">
                         <label for="text" class="form__textfield-label">Last name:</label>
-                        <input type="text" name="lastname" placeholder="Enter your last name" 
+                        <input type="text" name="lastname" placeholder="Enter your last name"
                             class="form__textfield-input">
                     </div>
                     <div class="form__textfield">
                         <label for="text" class="form__textfield-label">Email:</label>
-                        <input type="email" name="email" placeholder="Enter your email" 
-                            class="form__textfield-input">
+                        <input type="email" name="email" placeholder="Enter your email" class="form__textfield-input">
                     </div>
                     <div class="form__textfield">
                         <label for="text" class="form__textfield-label">Phone number:</label>
-                        <input type="tel" name="phone" placeholder="Enter your phone number" 
+                        <input type="tel" name="phone" placeholder="Enter your phone number"
                             class="form__textfield-input">
                     </div>
                     <div class="form__textfield">
                         <label for="text" class="form__textfield-label">Address:</label>
-                        <input type="text" name="address" placeholder="Enter your address" 
+                        <input type="text" name="address" placeholder="Enter your address"
                             class="form__textfield-input">
                     </div>
                 </fieldset>
@@ -60,55 +59,70 @@
                             <input type="radio" name="gender" value="other">Other
                         </div>
                     </div>
-                    Age:<br>
-                    <input type="number" name="age" min="0" max="150" placeholder="Enter your age"><br>
-                    Birthday:<br>
-                    <input type="date" name="bday" placeholder="Enter fate of your birthday"><br>
+                    <div class="form__textfield">
+                        <label for="number" class="form__textfield-label">Age:</label>
+                        <input type="number" name="age" min="0" max="150" placeholder="Enter your age">
+                    </div>
+                    <div class="form__textfield">
+                        <label for="date" class="form__textfield-label">Birthday:</label>
+                        <input type="date" name="bday" placeholder="Enter fate of your birthday">
+                    </div>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>Specialist</legend>
-                    Select type of specialist:<br>
-                    <select name="doctors" multiple><br>
-                        <option value="physician_family">Family practice physician</option>
-                        <option value="physician_internal">Internal medicine physician</option>
-                        <option value="pediatrician">Pediatrician</option>
-                        <option value="allergist">Allergist</option>
-                        <option value="dermatologist">Dermatologist</option>
-                        <option value="infectious">Infectious disease doctor</option>
-                        <option value="ophthalmologist">Ophthalmologist</option>
-                        <option value="gynecologist">Obstetrician/gynecologist</option>
-                        <option value="cardiologist">Cardiologist</option>
-                        <option value="endocrinologist">Endocrinologist</option>
-                        <option value="gastroenterologist">Gastroenterologist</option>
-                        <option value="nephrologist">Nephrologist</option>
-                        <option value="urologist">Urologist</option>
-                        <option value="pulmonologist">Pulmonologist</option>
-                        <option value="otolaryngologist">Otolaryngologist</option>
-                        <option value="neurologist">Neurologist</option>
-                        <option value="psychiatrist">Psychiatrist</option>
-                        <option value="oncologist">Oncologist</option>
-                        <option value="radiologist">Radiologist</option>
-                        <option value="rheumatologist">Rheumatologist</option>
-                        <option value="surgeon_general">General surgeon</option>
-                        <option value="surgeon_orthopedic">Orthopedic surgeon</option>
-                        <option value="surgeon_cardiac">Cardiac surgeon</option>
-                        <option value="anesthesiologist">Anesthesiologist</option>
-                    </select>
+                    <div class="">
+                        <label for="doctorSelector">Select type of specialist:</label>
+                        <div class="" id="doctorSelector">
+                            <select name="doctors" multiple><br>
+                                <option value="physician_family">Family practice physician</option>
+                                <option value="physician_internal">Internal medicine physician</option>
+                                <option value="pediatrician">Pediatrician</option>
+                                <option value="allergist">Allergist</option>
+                                <option value="dermatologist">Dermatologist</option>
+                                <option value="infectious">Infectious disease doctor</option>
+                                <option value="ophthalmologist">Ophthalmologist</option>
+                                <option value="gynecologist">Obstetrician/gynecologist</option>
+                                <option value="cardiologist">Cardiologist</option>
+                                <option value="endocrinologist">Endocrinologist</option>
+                                <option value="gastroenterologist">Gastroenterologist</option>
+                                <option value="nephrologist">Nephrologist</option>
+                                <option value="urologist">Urologist</option>
+                                <option value="pulmonologist">Pulmonologist</option>
+                                <option value="otolaryngologist">Otolaryngologist</option>
+                                <option value="neurologist">Neurologist</option>
+                                <option value="psychiatrist">Psychiatrist</option>
+                                <option value="oncologist">Oncologist</option>
+                                <option value="radiologist">Radiologist</option>
+                                <option value="rheumatologist">Rheumatologist</option>
+                                <option value="surgeon_general">General surgeon</option>
+                                <option value="surgeon_orthopedic">Orthopedic surgeon</option>
+                                <option value="surgeon_cardiac">Cardiac surgeon</option>
+                                <option value="anesthesiologist">Anesthesiologist</option>
+                            </select>
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>Details</legend>
-                    <textarea name="complaints" id="complaints" cols="15" rows="5"
-                        placeholder="Enter your health complaints, symptoms and other details"></textarea>
-                    <br>
-                    Download your details:<br>
-                    <input type="file" name="file" id="download-file" multiple><br>
+                    <div class="">
+                        <label for="complaints">Write details about your deseases:</label>
+                        <textarea name="complaints" id="complaints" cols="15" rows="5"
+                            placeholder="Enter your health complaints, symptoms and other details"></textarea>
+                    </div>
+                    <div class="">
+                        <label for="download-file">Download your details:</label>
+                        <input type="file" name="file" id="download-file" multiple><br>
+                    </div>
                 </fieldset>
-                <div class="form__button">
-                    <a href="index.html" class="general-load">Back</a>
+                <div class="">
+                    <div class="form__button">
+                        <a href="index.html" class="general-load">Back</a>
+                    </div>
+                    <div class="form__button">
+                        <input type="submit" value="Submit" class="form__load">
+                    </div>
                 </div>
-                <div class="form__button">
-                    <input type="submit" value="Submit" class="form__load">
-                </div>
+
 
             </form>
         </div>
