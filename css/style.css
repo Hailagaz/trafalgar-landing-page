@@ -330,21 +330,6 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-textarea {
-  min-width: 200px;
-  min-height: 25px;
-  max-height: 100px;
-  height: 100%;
-  width: 100%;
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +420,14 @@ textarea {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.form__textarea {
+  min-width: 200px;
+  min-height: 25px;
+  max-height: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 html, body {

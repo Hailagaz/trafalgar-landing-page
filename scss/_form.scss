@@ -1,20 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-textarea {
-  min-width: 200px;
-  min-height: 25px;
-  max-height: 100px;
-  height: 100%;
-  width: 100%;
-}
-
 .wrapper-form {
-  
 }
+
 .form {
   display: flex;
   justify-content: center;
@@ -23,15 +9,26 @@ textarea {
   border-radius: 0.25rem;
   margin: 50px auto 50px auto;
   max-width: 350px;
-  
+
+  // .form__logotype
+
   &__logotype {
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-  //&__logo {}
-  //&__name {}
+  // .form__logo
+
+  &__logo {
+  }
+
+  // .form__name
+
+  &__name {
+  }
+
+  // .form__fieldset
 
   &__fieldset {
     background-color: #ffffff;
@@ -42,12 +39,21 @@ textarea {
     border: 1px solid #bdbdbd;
   }
 
+  // .form__textfield
+
   &__textfield {
     display: flex;
     flex-flow: column;
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
+  // .form__textfield-label
+
+  &__textfield-label {
+  }
+
+  // .form__textfield-input
 
   &__textfield-input {
     height: calc(2.25rem + 2px);
@@ -75,5 +81,60 @@ textarea {
     border-color: #bdbdbd;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+  // .form__radio
+
+  &__radio {
+  }
+
+  // .form__genderradio
+
+  &__genderradio {
+  }
+
+  // .form__specialist
+
+  &__specialist {
+  }
+
+  // .form__select
+
+  &__select {
+  }
+
+  // .form__textarea
+
+  &__textarea {
+    min-width: 200px;
+    min-height: 25px;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+  }
+
+  // .form__complaints
+
+  &__complaints {
+  }
+
+  // .form__file-load
+
+  &__file-load {
+  }
+
+  // .form__buttons
+
+  &__buttons {
+  }
+
+  // .form__button
+
+  &__button {
+  }
+
+  // .form__load
+
+  &__load {
   }
 }
