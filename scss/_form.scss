@@ -63,7 +63,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
+    background-color: #ffffff;
     background-clip: padding-box;
     border: 1px solid #bdbdbd;
     border-radius: 0.25rem;
@@ -101,26 +101,96 @@
   // .form__select
 
   &__select {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444444;
+    line-height: 1.3;
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__select::-ms-expand {
+    display: none;
+  }
+  &__select:hover {
+    border-color: #888;
+  }
+  &__select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+  &__select option {
+    font-weight: normal;
   }
 
   // .form__textarea
 
   &__textarea {
-    min-width: 200px;
-    min-height: 25px;
-    max-height: 100px;
-    height: 100%;
-    width: 100%;
+    display: initial;
   }
 
   // .form__complaints
 
   &__complaints {
+    display: block;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.3;
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__complaints::-ms-expand {
+    display: none;
+  }
+  &__complaints:hover {
+    border-color: #888;
+  }
+  &__complaints:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+  &__complaints option {
+    font-weight: normal;
   }
 
   // .form__file-load
-
+  
   &__file-load {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__file-label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
   }
 
   // .form__buttons
@@ -137,4 +207,8 @@
 
   &__load {
   }
+}
+
+input[type="file"] {
+    display: none;
 }
