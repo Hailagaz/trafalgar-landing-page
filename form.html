@@ -117,14 +117,20 @@
                         <input type="file" name="file" id="download-file" multiple>
                     </div>
                 </fieldset>
-                <div class="form__buttons">
-                    <div class="form__button general-button">
-                        <a href="index.html" class="form__load general-load">Back</a>
+                <fieldset class="form__fieldset">
+                    <legend>Control</legend>
+                    <div class="form__buttons">
+                    <div class="form__button">
+                        <a href="index.html" class="form__load">Back</a>
                     </div>
-                    <div class="form__button general-button">
-                        <input type="submit" value="Submit" class="form__load general-load" style="cursor: pointer">
+                    <div class="form__button">
+                        <label for="button-submit" class="form__button-label">Submit</label>
+                        <input type="submit" value="Submit" style="cursor: pointer"
+                            class="form__load" id="button-submit">
                     </div>
                 </div>
+                </fieldset>
+                
             </form>
         </div>
     </div>
