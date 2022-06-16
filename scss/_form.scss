@@ -1,5 +1,5 @@
-.wrapper-form {
-}
+// .wrapper-form {
+// }
 
 .form {
   display: flex;
@@ -20,13 +20,13 @@
 
   // .form__logo
 
-  &__logo {
-  }
+  // &__logo {
+  // }
 
   // .form__name
 
-  &__name {
-  }
+  // &__name {
+  // }
 
   // .form__fieldset
 
@@ -50,8 +50,8 @@
 
   // .form__textfield-label
 
-  &__textfield-label {
-  }
+  // &__textfield-label {
+  // }
 
   // .form__textfield-input
 
@@ -85,8 +85,8 @@
 
   // .form__radio
 
-  &__radio {
-  }
+  // &__radio {
+  // }
 
   // .form__genderradio
 
@@ -98,8 +98,8 @@
 
   // .form__specialist
 
-  &__specialist {
-  }
+  // &__specialist {
+  // }
 
   // .form__select
 
@@ -187,6 +187,15 @@
     margin-bottom: 15px;
   }
 
+  &__file-input, &__load {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
   &__file-label {
     display: inline-block;
     padding-top: 10px;
@@ -230,8 +239,8 @@
 
   // .form__buttons
 
-  &__buttons {
-  }
+  // &__buttons {
+  // }
 
   // .form__button
 
@@ -256,8 +265,11 @@
   }
 
   // .form__load
+  //&__load {}
 
-  &__load {
+  // .form__button-label {}
+
+  &__button-label {
     display: inline-block;
     text-align: center;
     margin: auto;
@@ -268,17 +280,17 @@
     //color: #458ff6;
   }
 
-  &__load:hover {
+  &__button-label:hover {
     background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
     color: #ffffff;
     transition: 0.25s;
   }
 }
 
-input[type="file"] {
-  display: none;
-}
+// input[type="file"] {
+//   display: none;
+// }
 
-input[type="submit"] {
-  display: none;
-}
+// input[type="submit"] {
+//   display: none;
+// }

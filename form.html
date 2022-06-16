@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link type="image/x-icon" href="images/molecule.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="images/molecule.ico" rel="icon">
+    <script src="js/form.js"></script>
 </head>
 
 <body>
@@ -65,11 +66,11 @@
                         <input type="number" name="age" min="0" max="150" placeholder="Enter your age"
                             class="form__textfield-input" id="age1">
                     </div>
-                    <div class="form__textfield">
+                    <!-- <div class="form__textfield">
                         <label for="birthday" class="form__textfield-label">Birthday:</label>
                         <input type="date" name="bday" placeholder="Enter fate of your birthday"
                             class="form__textfield-input" id="birthday">
-                    </div>
+                    </div> -->
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>Specialist</legend>
@@ -113,18 +114,20 @@
                             class="form__complaints"></textarea>
                     </div>
                     <div class="form__file-load">
-                        <label for="download-file" class="form__file-label">Download additional files</label>
-                        <input type="file" name="file" id="download-file" multiple>
+                        <input type="file" name="file" id="download-file" class="form__file-input"
+                        multiple data-multiple-caption="{count} files chosen">
+                        <label for="download-file" 
+                        class="form__file-label"><span>Download additional files</span></label>
                     </div>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>Control</legend>
                     <div class="form__buttons">
                     <div class="form__button">
-                        <a href="index.html" class="form__load">Back</a>
+                        <a href="index.html" class="form__button-label">Back</a>
                     </div>
                     <div class="form__button">
-                        <label for="button-submit" class="form__button-label form__load" 
+                        <label for="button-submit" class="form__button-label" 
                             style="cursor: pointer">Submit</label>
                         <input type="submit" value="Submit" style="cursor: pointer"
                             class="form__load" id="button-submit">
