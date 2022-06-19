@@ -1,8 +1,8 @@
-@import "_slider";
-//@import "_list";
+//@import "_slider";
 @import "_menu";
 @import "_spinner";
 @import "_form";
+@import "_swiper";
 
 html, body {
     scroll-behavior: smooth;
@@ -849,79 +849,6 @@ a:visited,
 a:hover {
     text-decoration: none;
     color: inherit;
-}
-
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 66px;
-    height: 274px;
-    max-width: 984px;
-}
-
-.swiper-slide {
-    text-align: start;
-    font-size: 18px;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-info {
-    margin-left: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.swiper-photo {
-    border-radius: 50%;
-    border: 3px #c4c4c4 solid;
-    max-width: 133px;
-}
-
-.swiper-person {
-    margin-left: 29px;
-}
-
-.swiper-name {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 48px;
-    width: 220px;
-}
-
-.swiper-position {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 48px;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.swiper-testimonials {
-    margin: auto 50px auto 20px;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 0.9);
-    height: auto;
-    max-width: 420px;
 }
 
 footer p {
