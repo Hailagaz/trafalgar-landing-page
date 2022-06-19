@@ -56,9 +56,15 @@
                     <div class="form__radio">
                         <label for="genderfield">Select your gender:</label>
                         <div class="form__genderradio" id="genderfield">
-                            <input type="radio" name="gender" value="male">Male
-                            <input type="radio" name="gender" value="female">Female
-                            <input type="radio" name="gender" value="other">Other
+                            <input type="radio" name="gender" value="male"
+                                id="radio1">
+                            <label for="radio1">Male</label>
+                            <input type="radio" name="gender" value="female"
+                                id="radio2">
+                            <label for="radio2">Female</label>
+                            <input type="radio" name="gender" value="other"
+                                id="radio3">
+                            <label for="radio3">Other</label>
                         </div>
                     </div>
                     <div class="form__textfield">
@@ -113,26 +119,26 @@
                             placeholder="Enter your health complaints, symptoms and other details"
                             class="form__complaints"></textarea>
                     </div>
-                    <div class="form__file-load">
+                    <div class="form__file-load form__button">
                         <input type="file" name="file" id="download-file" class="form__file-input"
                         multiple data-multiple-caption="{count} files chosen">
                         <label for="download-file" 
-                        class="form__file-label"><span>Download additional files</span></label>
+                        class="form__file-label form__button-label"><span>Download additional files</span></label>
                     </div>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>Control</legend>
                     <div class="form__buttons">
-                    <div class="form__button">
-                        <a href="index.html" class="form__button-label">Back</a>
+                        <div class="form__button">
+                            <a href="index.html" class="form__button-label">Back</a>
+                        </div>
+                        <div class="form__button">
+                            <label for="button-submit" class="form__button-label" 
+                                style="cursor: pointer">Submit</label>
+                            <input type="submit" value="Submit" style="cursor: pointer"
+                                class="form__load" id="button-submit">
+                        </div>
                     </div>
-                    <div class="form__button">
-                        <label for="button-submit" class="form__button-label" 
-                            style="cursor: pointer">Submit</label>
-                        <input type="submit" value="Submit" style="cursor: pointer"
-                            class="form__load" id="button-submit">
-                    </div>
-                </div>
                 </fieldset>
                 
             </form>

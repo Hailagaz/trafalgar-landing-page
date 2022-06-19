@@ -422,10 +422,47 @@
           box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
+.form__radio strong {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+  margin-right: 10px;
+  letter-spacing: 0.5px;
+}
+
 .form__genderradio {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.form__genderradio label {
+  display: inline-block;
+  padding: 3px 9px;
+  cursor: pointer;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+}
+
+.form__genderradio input[type="radio"]:checked + label {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+}
+
+.form__genderradio label:hover {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .form__select {
@@ -526,47 +563,7 @@
 }
 
 .form__file-label {
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
   cursor: pointer;
-  width: 100%;
-  max-width: 100%;
-  text-align: center;
-  font-size: 16px;
-  color: #444444;
-  line-height: 1.3;
-  border: 1px solid #bdbdbd;
-  border-radius: 0.25rem;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.form__file-label::-ms-expand {
-  display: none;
-}
-
-.form__file-label:hover {
-  color: #212529;
-  background-color: #fff;
-  border-color: #bdbdbd;
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-}
-
-.form__file-label:focus {
-  border-color: #aaa;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
-  outline: none;
-}
-
-.form__file-label option {
-  font-weight: normal;
 }
 
 .form__button {
@@ -604,6 +601,10 @@
   color: #ffffff;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+input[type="radio"] {
+  display: none;
 }
 
 html, body {
