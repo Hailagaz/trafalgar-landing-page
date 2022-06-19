@@ -17,6 +17,7 @@
     display: -webkit-flex;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -35,8 +36,9 @@
 .swiper-info {
     margin-left: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .swiper-photo {

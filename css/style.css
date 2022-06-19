@@ -506,6 +506,7 @@ input[type="radio"] {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -530,12 +531,16 @@ input[type="radio"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .swiper-photo {
@@ -1214,6 +1219,7 @@ body {
   line-height: 48px;
   color: #ffffff;
   margin: 64px auto 0px auto;
+  text-align: center;
 }
 
 .testimonials__empty {
